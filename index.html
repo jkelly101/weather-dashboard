@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <nav class="side-nav">
+            <div class="search-container">
+                <h3>Search for a City:</h3>
+                <div class="search-bar">
+                    <input placeholder="Type city name here..." />
+                    <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="search-history">
+                    <div class="cities">City</div>
+                    <div class="cities">City</div>
+                </div>
+            </div>
+        </nav>
+    <main>
+        <div class="main-forecast">
+            <div class="current-forecast" id="city-name">City</div>
+            <div class="current-forecast" id="temp">Temp:</div>
+            <div class="current-forecast" id="humidity">Humidity:</div>
+            <div class="current-forecast" id="wind-speed">Wind Speed:</div>
+            <div class="current-forecast" id="uv-index">UV Index:</div>
+        </div>
+        <div class="future-forecast">
+            <h2>5-Day Forecast:</h2>
+            <div class="five-day-forecast" id="day1">
+                <div class="weather-blocks" id="date">Date</div>
+                <img class="weather-blocks" id="weather-img">Img</img>
+                <div class="weather-blocks" id="temp">Temp</div>
+                <div class="weather-blocks" id="humidity">Humidity</div>
+            </div>
+            <div class="five-day-forecast" id="day2">
+                <div class="date">Date</div>
+                <img src="">Img</img>
+                <div class="temp">Temp</div>
+                <div class="humidity">Humidity</div>
+            </div>
+            <div class="five-day-forecast" id="day3">
+                <div class="date">Date</div>
+                <img src="">Img</img>
+                <div class="temp">Temp</div>
+                <div class="humidity">Humidity</div>
+            </div>
+            <div class="five-day-forecast" id="day4">
+                <div class="date">Date</div>
+                <img src="">Img</img>
+                <div class="temp">Temp</div>
+                <div class="humidity">Humidity</div>
+            </div>
+            <div class="five-day-forecast" id="day5">
+                <div class="date">Date</div>
+                <img src="">Img</img>
+                <div class="temp">Temp</div>
+                <div class="humidity">Humidity</div>
+            </div>
+
+        </div>
+    </main>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
