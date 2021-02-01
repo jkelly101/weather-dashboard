@@ -58,12 +58,18 @@ function getForecast(search) {
     method: "GET",
   }).then(function (response) {
     console.log(response);
+
+    var date = new Date(response.dt * 1000).toLocaleDateString("en-US");
+    console.log(date);
+    $("#current-city").append(date);
+
     var weatherIcon = $("<img>").attr({
       src: `http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`,
       alt: `weather icon`,
       style: "display: block",
     });
     $("#current-city").append(weatherIcon);
+
     $("#temp").html(`<b>Temperature: </b>${response.main.temp} °F`);
     $("#humidity").html(
       "<b>Humidity: </b>" + "" + (response.main.humidity + "%")
@@ -83,6 +89,7 @@ function getFiveDay(latt, long) {
     url: queryUrl,
     method: "GET",
   }).then(function (response) {
+    $(".future-forecast").empty();
     // console.log(response);
     $("#uv-index").html("<b>UVI: </b>" + "" + response.daily[0].uvi);
 
