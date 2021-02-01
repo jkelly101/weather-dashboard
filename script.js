@@ -66,7 +66,7 @@ function getForecast(search) {
     var weatherIcon = $("<img>").attr({
       src: `http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`,
       alt: `weather icon`,
-      style: "display: block",
+      //   style: "display: block",
     });
     $("#current-city").append(weatherIcon);
 
@@ -91,16 +91,15 @@ function getFiveDay(latt, long) {
   }).then(function (response) {
     $(".future-forecast").empty();
     // console.log(response);
-    $("#uv-index").html("<b>UVI: </b>" + "" + response.daily[0].uvi);
+    $("#uv-index").html(
+      "<b>UV Index: </b>" + "" + "<span>" + response.daily[0].uvi
+    ) + "</span>";
 
-    
-    // $("#uv-index").addClass("green");
-    
-
-    // $("#uv-index").addClass("yellow");
-
-  
-    // $("#uv-index").addClass("red");
+    if (response.daily[0].uvi < 3) {
+      $("span").addClass("green");
+    } else if (response.daily[0].uvi < 6) {
+      $("span").addClass("yellow");
+    } else if (response.daily[0].uvi < 8) $("span").addClass("red");
 
     // Get 5-Day
     var fiveDay = response.daily;

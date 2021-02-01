@@ -17,6 +17,11 @@ header {
   display: flex;
 }
 
+input {
+  height: 30px;
+  font-size: 14px;
+}
+
 .search-container {
   flex: 40%;
   display: block;
@@ -50,16 +55,16 @@ main {
   flex: 60%;
   float: right;
   margin: 10px;
-  padding: 15px 10px;
 }
 
 .main-forecast {
   border: 1px lightgray solid;
-  padding: 15px 10px;
+  padding: 10px;
+  font-size: 20px;
 }
 
 .current-forecast {
-  padding: 10px;
+  padding: 5px;
 }
 
 #city-name {
@@ -89,6 +94,11 @@ main {
   font-size: 14px;
 }
 
+span {
+  padding: 6px;
+  border-radius: 4px;
+}
+
 .green {
   background: green;
 }
@@ -99,6 +109,11 @@ main {
 
 .red {
   background: red;
+}
+
+img {
+  width: 70px;
+  height: 70px;
 }
 
 /* Green - UVI under 3 (1-2), no protection advised.
