@@ -13,7 +13,7 @@ header {
   margin-bottom: 0;
 }
 
-.container{
+.container {
   display: flex;
 }
 
@@ -33,17 +33,16 @@ input[type="text"] {
   border: solid #ccc;
 }
 
-.search-history{
-    border: 1px solid darkgray;
-    background: white;
-    margin-top: 10px;
-    font-size: 14px;
-    color: darkgray;
+.search-history {
+  border: 1px solid darkgray;
+  background: white;
+  margin-top: 10px;
+  font-size: 14px;
+  color: darkgray;
 }
 
-.cities{
+.cities {
   border: 1px solid lightgray;
-  line-height: 20px;
   padding: 10px;
 }
 
@@ -54,20 +53,20 @@ main {
   padding: 15px 10px;
 }
 
-.main-forecast{
-    border: 1px lightgray solid;
-    padding: 15px 10px;
+.main-forecast {
+  border: 1px lightgray solid;
+  padding: 15px 10px;
 }
 
-.current-forecast{
-    padding: 10px;
+.current-forecast {
+  padding: 10px;
 }
 
-#city-name{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 25px;
+#city-name {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .five-day-forecast {
@@ -75,7 +74,7 @@ main {
   color: white;
   background: blue;
   width: 120px;
-  height: 150px;
+  height: fit-content;
   flex: inline-block;
   border-radius: 5px;
   padding: 5px;
