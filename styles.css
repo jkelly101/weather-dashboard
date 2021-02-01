@@ -38,6 +38,10 @@ input[type="text"] {
   border: solid #ccc;
 }
 
+i {
+  padding: 6px;
+}
+
 .search-history {
   border: 1px solid darkgray;
   background: white;
