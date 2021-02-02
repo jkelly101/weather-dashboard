@@ -66,7 +66,7 @@ function getForecast(search) {
     var weatherIcon = $("<img>").attr({
       src: `http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`,
       alt: `weather icon`,
-      //   style: "display: block",
+      // style: "display: block",
     });
     $("#current-city").append(weatherIcon);
 
