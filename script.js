@@ -97,7 +97,7 @@ function getFiveDay(latt, long) {
 
     if (response.daily[0].uvi < 3) {
       $("span").addClass("green");
-    } else if (response.daily[0].uvi < 6) {
+    } else if (response.daily[0].uvi < 7) {
       $("span").addClass("yellow");
     } else if (response.daily[0].uvi > 8) $("span").addClass("red");
 
